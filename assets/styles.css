@@ -1,0 +1,488 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: lighter;
+}
+
+header{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+header .header-wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+header .logo{
+  width: 100%;
+}
+
+header .logo .logo-img{
+  height: 107px;
+  width: 480px;
+}
+
+header .logo .mobile-img{
+  height: 52px;
+  width: 75px;
+  display: none;
+}
+
+header h1{
+  font-family: 'Zapfino', cursive;
+}
+
+header h2{
+  font-size: 1rem;
+}
+
+nav {
+  width: 100%;
+
+}
+
+nav .wrapper{
+  padding: 0 30px;
+}
+
+nav .wrapper input{
+  display: none;
+}
+
+nav .wrapper .bttn{
+  color: rgb(51, 51, 51);
+  font-size: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+nav .nav-links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+nav .nav-links li{
+  list-style: none;
+}
+
+nav .nav-links li a{
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+
+nav .nav-links .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 0px;
+}
+
+nav .wrapper .menu-btn{
+  position: absolute;
+  right: 30px;
+  top: 55px;
+}
+
+#hero .hero-container{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 0 60px;
+}
+
+#hero .hero-img .hero-image{
+  width: 100%;
+  height: 909px;
+}
+
+#hero .hero-container .hero-tag1{
+  position: absolute;
+  top: 18rem;
+  color: rgb(242, 242, 242);
+  font-size: 3rem;
+
+}
+#hero .hero-container .hero-tag2{
+  position: absolute;
+  right: -2rem;
+  top: 18rem;
+  color: rgb(242, 242, 242);
+  font-size: 3rem;
+}
+
+#quick-book .book-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  bottom: 50px;
+}
+
+#quick-book .book-container .book-wrap{
+  padding: 3px;
+}
+
+#quick-book .book-container .book{
+  padding: 1rem 2rem;
+  background-color: rgb(255, 123, 172);
+  color: rgb(242, 242, 242);
+  font-size: 2.7rem;
+  text-align: center;
+  border: solid rgb(242, 242, 242) 1rem;
+}
+
+#quick-book .book-container .book p{
+  margin: 0
+}
+
+#welcome .intro{
+  margin: -40px 200px 0;
+  text-align: center;
+  line-height: 2.5;
+}
+
+#welcome .intro .small-img{
+  height:52px;
+  width:75px;
+}
+
+#service-education .education{
+  text-align: center;
+}
+
+#service-education .education .sect-icon .small-img{
+  height: 52px;
+  width: 75px;
+}
+
+#service-education .education .service-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 20px;
+}
+
+#service-education .education .service-container .serv{
+  margin: 0 2rem;
+  max-width: 257px;
+}
+
+#service-education .education .service-container .serv span{
+  background-color: rgb(255, 123, 172);
+  color: rgb(51, 51, 51);
+  border: 3px solid rgb(242, 242, 242);
+  padding: 5px;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+  font-weight: 400;
+}
+
+#massages .massage-services{
+  text-align: center;
+}
+
+#massages .massage-services .resize{
+  width: 390px;
+  height: 259px;
+}
+
+#massages .massage-services .book-top-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 60px;
+}
+
+#massages .massage-services .book-top-row span{
+  background-color: rgb(255, 123, 172);
+  color: rgb(51, 51, 51);
+  border: 3px solid rgb(242, 242, 242);
+  padding: 5px;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+  font-weight: 400;
+}
+
+#massages .massage-services .book-bottom-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+#massages .massage-services .book-bottom-row span{
+  background-color: rgb(255, 123, 172);
+  color: rgb(51, 51, 51);
+  border: 3px solid rgb(242, 242, 242);
+  padding: 5px;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+  font-weight: 400;
+}
+
+#massages .massage-services .sect-icon .small-img{
+  height: 52px;
+  width: 75px;
+}
+
+footer{
+  text-align: center;
+  background-color: rgb(255, 123, 172);
+  margin-top: 40px;
+}
+
+footer p{
+  color: #F2F2F3;
+}
+
+footer .copyright{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+  font-size: 13px;
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px){
+  body{
+    background-color: blue;
+  }
+
+  #hero .hero-container .hero-tag1{
+    font-size: 2rem;
+  }
+
+  #hero .hero-container .hero-tag2{
+    right: -3rem;
+    font-size: 2rem;
+  }
+
+  #quick-book .book-container{
+    position: relative;
+    bottom: 40px;
+  }
+  #quick-book .book-container .book{
+    padding: 0.5rem 1.4rem;
+  }
+
+  #service-education .education .service-container{
+    padding: 0 20px;
+  }
+
+  #massages .massage-services .book-top-row .massage-top{
+    margin: 15px;
+  }
+
+  #massages .massage-services .book-bottom-row .massage-bot{
+    margin: 10px;
+  }
+
+  footer{
+    font-size: 16px;
+  }
+
+  /* Mobile Menu*/
+
+  nav .wrapper .bttn{
+    display: block;
+  }
+
+  nav .nav-links{
+    position: fixed;
+    height: 100vh;
+    width: 100vh;
+    max-width: 350px;
+    background: rgb(242, 242, 242);
+    display: block;
+    top: 0;
+    right: -100%;
+    line-height: 50px;
+    padding: 20px 10px;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+  #menu-btn:checked ~ .nav-links{
+    right: 0%;
+  }
+
+  nav .nav-links li{
+    margin: 15px 10px;
+  }
+
+  nav .nav-links li a{
+    display: block;
+    font-size: 20px;
+  }
+}
+
+  /*Large Phones */
+@media (min-width: 576px) and (max-width: 767px) {
+  body{
+    background-color: purple;
+  }
+
+  #hero .hero-container .hero-tag1{
+    top: 20rem;
+    font-size: 1.4rem;
+  }
+
+  #hero .hero-container .hero-tag2{
+    right: -3.8rem;
+    top: 20rem;
+    font-size: 1.4rem;
+  }
+
+  #quick-book .book-container .book{
+    padding: 0.5rem 1.3rem;
+    font-size: 1.4rem;
+  }
+
+  #welcome .intro{
+    margin: -40px 167px 0;
+  }
+
+  #massages .massage-services .book-top-row .massage-top{
+    margin: 15px;
+  }
+
+  #massages .massage-services .book-bottom-row .massage-bot{
+    margin: 10px;
+  }
+
+  /* Mobile Menu*/
+  nav .wrapper .bttn{
+    display: block;
+  }
+
+  nav .nav-links{
+    position: fixed;
+    height: 100vh;
+    width: 100vh;
+    max-width: 350px;
+    background: rgb(242, 242, 242);
+    display: block;
+    top: 0;
+    right: -100%;
+    line-height: 50px;
+    padding: 20px 10px;
+    z-index: 999;
+    transition: all 0.3s ease;
+  }
+
+  #menu-btn:checked ~ .nav-links{
+    right: 0%;
+  }
+
+  nav .nav-links li{
+    margin: 15px 10px;
+  }
+
+  nav .nav-links li a{
+    display: block;
+    font-size: 20px;
+  }
+}
+/*Small Phones */
+@media (min-width: 1px) and (max-width: 575px){
+  body{
+    background-color: red;
+  }
+
+  header .logo .logo-img{
+    display: none;
+  }
+
+  header .logo .mobile-img{
+    display: block;
+    margin: 5px 0px;
+  }
+
+  #hero .hero-container .hero-tag1{
+    top: 37rem;
+    font-size: 1.8rem;
+  }
+
+  #hero .hero-container .hero-tag2{
+    right: -1rem;
+    top: 7rem;
+    font-size: 1.8rem;
+  }
+
+  #welcome .intro{
+    margin: -40px 5px 0;
+  }
+
+  #service-education .education .service-container{
+    flex-direction: column;
+  }
+
+  #massages .massage-services .resize{
+    width: 335px;
+    height: 241px;
+  }
+
+  #massages .massage-services .book-top-row .massage-top{
+    margin: 15px;
+  }
+
+  #massages .massage-services .book-bottom-row .massage-bot{
+    margin: 10px;
+  }
+
+  footer .copyright{
+    flex-direction: column-reverse;
+    font-size: 12px;
+  }
+
+  /* Mobile Menu*/
+
+  nav .wrapper .bttn{
+    display: block;
+  }
+
+  nav .wrapper .menu-btn{
+    top: 20px;
+  }
+
+  nav .nav-links{
+    position: fixed;
+    height: 100vh;
+    width: 100vh;
+    max-width: 350px;
+    background: rgb(242, 242, 242);
+    display: block;
+    top: 0;
+    right: -100%;
+    line-height: 50px;
+    padding: 20px 10px;
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+  #menu-btn:checked ~ .nav-links{
+    right: 0%;
+  }
+
+  nav .nav-links .cancel-btn{
+    position: absolute;
+    left: 15rem;
+    top: 0px;
+  }
+
+  nav .nav-links li{
+    margin: 15px 10px;
+  }
+
+  nav .nav-links li a{
+    display: block;
+    font-size: 20px;
+  }
+}
