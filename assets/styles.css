@@ -251,9 +251,9 @@ footer .copyright{
 
 /* Tablets */
 @media (min-width: 768px) and (max-width: 991px){
-  body{
+  /* body{
     background-color: blue;
-  }
+  } */
 
   #hero .hero-container .hero-tag1{
     font-size: 2rem;
@@ -325,9 +325,9 @@ footer .copyright{
 
   /*Large Phones */
 @media (min-width: 576px) and (max-width: 767px) {
-  body{
+  /* body{
     background-color: purple;
-  }
+  } */
 
   #hero .hero-container .hero-tag1{
     top: 20rem;
@@ -392,9 +392,9 @@ footer .copyright{
 }
 /*Small Phones */
 @media (min-width: 1px) and (max-width: 575px){
-  body{
+  /* body{
     background-color: red;
-  }
+  } */
 
   header .logo .logo-img{
     display: none;
