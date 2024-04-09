@@ -50,16 +50,41 @@
     <section id="quick-book">
       <div class="container book-container">
         <div class="row justify-content-md-center">
-          <!-- <button class="button open-button">
+          <button type="button" class="button open-button" data-toggle="modal" data-target="#noticeModal">
             <div class="col-lg book consult">
-              <p>Book Consultation</p>
+              <p>Book Appointment</p>
             </div>
-          </button> -->
-          <a target="_top" href="https://squareup.com/appointments/book/ujdxbo54uafruw/L4NWXG0218M8G/start" rel="nofollow">
+          </button>
+          <!-- Start cancellattion notice -->
+          <!-- Bootstrap Modal -->
+          <div class="modal" id="noticeModal" tabindex="-1">
+            <div class="modal-dialog" id="noticeDialog">
+              <div class="modal-content" id="noticeContent">
+                <div class="modal-header">
+                  <h5 class="modal-title">Cancellation Policy Agreement</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>In order to book an appointment you acknowledge a $35 cancellation fee will apply if you make an appointment and decide to cancel it. This is not disputable and some massages will require you pay this fee upfront.</p>
+                  <br>
+                  <input type="checkbox" id="agree" name="agree" />
+                  <label for="agree">I agree to the Cancellation Policy</label>
+                </div>
+                <div class="modal-footer">
+                  <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal"></button> -->
+                  <button type="button" class="btn btn-primary" id="noticeButton"><a id="agreeButton" target="_top" href="" rel="nofollow">I Agree</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- <a target="_top" href="https://squareup.com/appointments/book/ujdxbo54uafruw/L4NWXG0218M8G/start" rel="nofollow">
             <div class="col-lg book appointment">
               <p>Book Appointment</p>
             </div>
-          </a>
+          </a> -->
           <!-- <div class="col-lg book schedule">
             <p>Call To</p><p>Schedule</p>
           </div> -->
@@ -83,7 +108,7 @@
             <p>A regular massage for 30 minutes OR A Swedish Massage for 55 minutes.</p>
             <br>
             <!-- <p>$25</p> -->
-            <a target="_top" href="https://squareup.com/appointments/book/ujdxbo54uafruw/L4NWXG0218M8G/start" rel="nofollow"><span>Book Massage</span></a>
+            <button type="button" class="button open-button" data-toggle="modal" data-target="#noticeModal"><span>Book Massage</span></button>
           </div>
           <div class="col-lg-4 massage-top book-dtmt">
             <img class="resize" src="assets/sensual_massage.jpg" alt="dtmt_image">
@@ -91,7 +116,7 @@
             <p>A full body massage with lotion on a warming table. Warming lotion upgrade available for higher comfort at additional cost.</p>
             <br>
             
-            <a target="_top" href="https://squareup.com/appointments/book/ujdxbo54uafruw/L4NWXG0218M8G/start" rel="nofollow"><span>Book Massage</span></a>
+            <button type="button" class="button open-button" data-toggle="modal" data-target="#noticeModal"><span>Book Massage</span></button>
           </div>
           <div class="col-lg-4 massage-top book-cupping">
             <img class="resize" src="assets/massage_old.jpg" alt="cupping_image">
@@ -99,7 +124,7 @@
             <p>Therapeutic massage to address any pain and loss of mobility issues. Lotion and area pain oil is used. Available for 30 minutes or 55 minute sessions.</p>
             <br>
             <!-- <p>$10</p> -->
-            <a target="_top" href="https://squareup.com/appointments/book/ujdxbo54uafruw/L4NWXG0218M8G/start" rel="nofollow"><span>Book Massage</span></a>
+            <button type="button" class="button open-button" data-toggle="modal" data-target="#noticeModal"><span>Book Massage</span></button>
           </div>
         </div>
         <!-- <div class="row mx-lg-n5 book-bottom-row">
@@ -161,6 +186,6 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-  	<script src="index.js"></script>
+  	<script src="assets/scripts.js"></script>
   </body>
 </html>
