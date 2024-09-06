@@ -146,6 +146,7 @@ nav .wrapper .menu-btn{
 
 #quick-book .book-container #noticeDialog{
   border: solid 8px rgb(255, 123, 172); 
+  max-width: 676px;
 }
 
 #quick-book .book-container #noticeDialog #noticeContent{
