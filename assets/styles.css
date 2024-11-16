@@ -153,6 +153,15 @@ nav .wrapper .menu-btn{
   background-color: rgb(242, 242, 242);
 } 
 
+#quick-book .book-container #noticeDialog #noticeContent .modal-body #specialOffer{
+  background-color: rgb(255, 123, 172);
+  color: rgb(51, 51, 51);
+  border: 3px solid rgb(242, 242, 242);
+  padding: 5px;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+  font-weight: 400;
+}
+
 #quick-book .book-container #noticeDialog #noticeContent .modal-footer #noticeButton{
   background-color: rgb(255, 123, 172);
   color: rgb(51, 51, 51);
