@@ -263,6 +263,29 @@ nav .wrapper .menu-btn{
   margin: 2em;
 }
 
+#membership{
+  text-align: center;
+  margin: 20px 200px 0;
+}
+
+#membership .membership-container{
+  line-height: 2.5;
+}
+
+#membership .sect-icon .small-img{
+  height: 52px;
+  width: 75px;
+}
+
+#referral{
+  margin: 20px 200px 0;
+  text-align: center;
+}
+
+#referral .referral-container{
+  line-height: 2.5;
+}
+
 footer{
   text-align: center;
   background-color: rgb(255, 123, 172);
@@ -389,6 +412,14 @@ footer .copyright{
     margin: 10px;
   }
 
+  #membership{
+    margin: 20px 167px 0;
+  }
+
+  #referral{
+    margin: 20px 167px 0;
+  }
+
   /* Mobile Menu*/
   nav .wrapper .bttn{
     display: block;
@@ -467,6 +498,14 @@ footer .copyright{
 
   #massages .massage-services .book-bottom-row .massage-bot{
     margin: 10px;
+  }
+
+  #membership{
+    margin: 20px 5px 0;
+  }
+
+  #referral{
+    margin: 20px 5px 0;
   }
 
   footer .copyright{
