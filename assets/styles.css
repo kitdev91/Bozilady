@@ -17,7 +17,7 @@ header .header-wrapper{
   width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  text-align: center;
 }
 
 header .logo{
@@ -25,8 +25,7 @@ header .logo{
 }
 
 header .logo .logo-img{
-  height: 107px;
-  width: 480px;
+  width: 19%;
 }
 
 header .logo .mobile-img{
@@ -205,6 +204,9 @@ nav .wrapper .menu-btn{
 #service-education .education .service-container .serv{
   margin: 0 2rem;
   max-width: 257px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #service-education .education .service-container .serv span{
@@ -215,6 +217,23 @@ nav .wrapper .menu-btn{
   box-shadow: 2px 2px 0 rgba(0,0,0,0.2);
   font-weight: 400;
 }
+
+#service-education .education .service-container .serv .resize{
+  width: 390px;
+  height: 259px;
+}
+
+/* #service-education .education .service-container .serv .hot-obsidian{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#service-education .education .service-container .serv .hot-towel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
 
 #massages .massage-services{
   text-align: center;
@@ -309,6 +328,10 @@ footer .copyright{
   /* body{
     background-color: blue;
   } */
+
+  #hero .hero-img .hero-image{
+    height: 100%;
+  }
 
   #hero .hero-container .hero-tag1{
     font-size: 2rem;
@@ -459,6 +482,10 @@ footer .copyright{
     background-color: red;
   } */
 
+  #hero .hero-img .hero-image{
+    height: 28rem;
+  }
+
   header .logo .logo-img{
     display: none;
   }
@@ -469,13 +496,13 @@ footer .copyright{
   }
 
   #hero .hero-container .hero-tag1{
-    top: 37rem;
+    top: 17rem;
     font-size: 1.8rem;
   }
 
   #hero .hero-container .hero-tag2{
     right: -1rem;
-    top: 7rem;
+    top: 1rem;
     font-size: 1.8rem;
   }
 
