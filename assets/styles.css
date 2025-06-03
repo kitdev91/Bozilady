@@ -299,7 +299,7 @@ footer{
   margin-top: 40px;
 }
 
-footer p{
+footer p, a{
   color: #F2F2F3;
 }
 
