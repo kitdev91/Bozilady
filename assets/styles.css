@@ -293,6 +293,20 @@ nav .wrapper .menu-btn{
   line-height: 2.5;
 }
 
+#referral .sect-icon .small-img{
+  height: 52px;
+  width: 75px;
+}
+
+#about{
+  margin: 20px 200px 0;
+  text-align: center;
+}
+
+#about .about-container{
+  line-height: 2.5;
+}
+
 footer{
   text-align: center;
   background-color: rgb(255, 123, 172);
