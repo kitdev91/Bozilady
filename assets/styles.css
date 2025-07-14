@@ -445,6 +445,10 @@ footer .copyright{
     margin: 20px 167px 0;
   }
 
+  #about{
+    margin: 20px 167px 0;
+  }
+
   /* Mobile Menu*/
   nav .wrapper .bttn{
     display: block;
@@ -534,6 +538,10 @@ footer .copyright{
   }
 
   #referral{
+    margin: 20px 5px 0;
+  }
+
+  #about{
     margin: 20px 5px 0;
   }
 
