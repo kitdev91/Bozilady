@@ -180,9 +180,18 @@ nav .wrapper .menu-btn{
   line-height: 2.5;
 }
 
+#welcome .intro .promo{
+   width: 390px;
+  height: 259px;
+}
+
 #welcome .intro .small-img{
   height:52px;
   width:75px;
+}
+
+#welcome .bz_margin{
+  margin: 70px 0;
 }
 
 #service-education .education{
