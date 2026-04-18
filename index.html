@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Cookie Consent -->
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        
+        if(localStorage.getItem('consentMode') === null){
+            gtag('consent', 'default', {
+                'analytics_storage': 'denied',// one option
+            });
+        } else {
+            gtag('consent', 'default', JSON.parse(localStorage.getItem('consentMode')));
+        }
+    </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XY7R552PT8"></script>
     <script>
@@ -48,6 +61,29 @@
         </nav> -->
       </div>
     </header>
+      <section class="consent-cookie-container">
+      <div id="cookie-consent-banner" class="cookie-consent-banner">
+        <div class="cookie-consent-header">
+          <h3 style="flex-grow: 2;">Cookie Settings</h3>
+          <button type="button" id="btn-hide-banner" class="btn-close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="cookie-consent-buttons">
+          <p>We use cookies for website functiionality and collecting only device data for user experience improvements. We do not collect your data for ads or to recommend you products.</p>
+          <div class="cookie-consent-button-stack">
+            <button id="btn-accept-all" class="cookie-consent-button btn-success">Accept All</button>
+            <button id="btn-accept-some" class="cookie-consent-button btn-outline">Accept Selection</button>
+            <button id="btn-reject-all" class="cookie-consent-button btn-grayscale">Reject All</button>
+          </div>
+         
+        </div>
+        <div class="cookie-consent-options">
+            <label><input id="consent-necessary" type="checkbox" value="Necessary" checked disabled>Necessary</label>
+            <label><input id="consent-analytics" type="checkbox" value="Analytics" checked>Analytics</label>
+        </div>
+      </div>
+    </section>
     <section id="hero">
       <div class="hero-container">
         <div class="hero-tag1">
@@ -306,6 +342,7 @@
         <p>Cancellation fee: 50% weekdays. Friday-Sunday 100% | Rebooking fee: $30</p>
       </div>
     </footer>
+  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
