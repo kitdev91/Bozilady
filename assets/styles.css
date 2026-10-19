@@ -103,19 +103,38 @@ nav .wrapper .menu-btn{
   height: 909px;
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+    filter: blur(7px);
+
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+    filter: blur(0px);
+  }
+}
+
 #hero .hero-container .hero-tag1{
   position: absolute;
   top: 18rem;
   color: rgb(242, 242, 242);
   font-size: 3rem;
-
+  animation: fade-in linear;
+  animation-duration: 0.7s;
+  animation-delay: 200ms;
 }
+
 #hero .hero-container .hero-tag2{
   position: absolute;
   right: -2rem;
   top: 18rem;
   color: rgb(242, 242, 242);
   font-size: 3rem;
+  animation: fade-in linear;
+  animation-duration: 0.7s;
 }
 
 #quick-book .book-container{
@@ -180,9 +199,65 @@ nav .wrapper .menu-btn{
   line-height: 2.5;
 }
 
+@keyframes fade-from-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+    filter: blur(7px);
+
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+    filter: blur(0px);
+  }
+}
+
+@keyframes blur-from-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+    filter: blur(7px);
+
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+    filter: blur(0px);
+  }
+}
+
+@keyframes fade-from-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+#welcome .intro h1, h2{
+  animation: fade-from-left linear;
+  animation-timeline:view();
+  animation-range: entry 0 cover 40%;
+}
+
 #welcome .intro .promo{
    width: 390px;
   height: 259px;
+  animation: blur-from-bottom linear;
+  animation-timeline:view();
+  animation-range: entry 0 cover 40%;
+  animation-delay: 200ms;
+}
+
+#welcome .intro p, a{
+  animation: fade-from-bottom linear;
+  animation-timeline:view();
+  animation-range: entry 0 cover 40%;
 }
 
 #welcome .intro .small-img{
@@ -196,6 +271,12 @@ nav .wrapper .menu-btn{
 
 #service-education .education{
   text-align: center;
+}
+
+#service-education .education h1{
+  animation: fade-from-left linear;
+  animation-timeline:view();
+  animation-range: entry 0 cover 40%;
 }
 
 #service-education .education .sect-icon .small-img{
@@ -218,6 +299,25 @@ nav .wrapper .menu-btn{
   align-items: center;
 }
 
+#service-education .education .service-container .serv .resize{
+  animation: blur-from-bottom linear;
+  animation-timeline:view();
+  animation-range: entry 0 cover 40%;
+  animation-delay: 250ms;
+}
+
+#service-education .education .service-container .serv h3{
+  animation: fade-from-left linear;
+  animation-timeline:view();
+  animation-range: entry 0 cover 40%;
+}
+
+#service-education .education .service-container .serv p{
+  animation: fade-from-bottom linear;
+  animation-timeline:view();
+  animation-range: entry 0 cover 40%;
+}
+
 #service-education .education .service-container .serv span{
   background-color: rgb(255, 123, 172);
   color: rgb(51, 51, 51);
@@ -236,9 +336,31 @@ nav .wrapper .menu-btn{
   text-align: center;
 }
 
+#massages .massage-services h1{
+  animation: fade-from-left linear;
+  animation-timeline:view();
+  animation-range: entry 0 cover 40%;
+}
+
 #massages .massage-services .resize{
   width: 390px;
   height: 259px;
+  animation: blur-from-bottom linear;
+  animation-timeline:view();
+  animation-range: entry 0 cover 40%;
+  animation-delay: 250ms;
+}
+
+#massages .massage-services h3{
+  animation: fade-from-left linear;
+  animation-timeline:view();
+  animation-range: entry 0 cover 40%;
+}
+
+#massages .massage-services p{
+  animation: fade-from-bottom linear;
+  animation-timeline:view();
+  animation-range: entry 0 cover 40%;
 }
 
 #massages .massage-services .book-top-row{
@@ -288,6 +410,18 @@ nav .wrapper .menu-btn{
   line-height: 2.5;
 }
 
+#membership .membership-container h1{
+  animation: fade-from-left linear;
+  animation-timeline:view();
+  animation-range: entry 0 cover 40%;
+}
+
+#membership .membership-container p{
+  animation: fade-from-bottom linear;
+  animation-timeline:view();
+  animation-range: entry 0 cover 40%;
+}
+
 #membership .sect-icon .small-img{
   height: 52px;
   width: 75px;
@@ -302,6 +436,18 @@ nav .wrapper .menu-btn{
   line-height: 2.5;
 }
 
+#referral .referral-container h1{
+  animation: fade-from-left linear;
+  animation-timeline:view();
+  animation-range: entry 0 cover 40%;
+}
+
+#referral .referral-container p{
+  animation: fade-from-bottom linear;
+  animation-timeline:view();
+  animation-range: entry 0 cover 40%;
+}
+
 #referral .sect-icon .small-img{
   height: 52px;
   width: 75px;
@@ -314,6 +460,18 @@ nav .wrapper .menu-btn{
 
 #about .about-container{
   line-height: 2.5;
+}
+
+#about .about-container h1{
+  animation: fade-from-left linear;
+  animation-timeline:view();
+  animation-range: entry 0 cover 40%;
+}
+
+#about .about-container p{
+  animation: fade-from-bottom linear;
+  animation-timeline:view();
+  animation-range: entry 0 cover 40%;
 }
 
 footer{
