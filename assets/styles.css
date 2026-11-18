@@ -254,7 +254,7 @@ nav .wrapper .menu-btn{
   animation-delay: 200ms;
 }
 
-#welcome .intro p, a{
+#welcome .intro p, .intro a{
   animation: fade-from-bottom linear;
   animation-timeline:view();
   animation-range: entry 0 cover 40%;
@@ -401,6 +401,14 @@ nav .wrapper .menu-btn{
   margin: 2em;
 }
 
+#massages .policy-note{
+  font-size: 0.8rem;
+  display: inline-block;
+  width: 100%;
+  margin: 1rem 15rem;
+  color: #5f5f5f;
+}
+
 #membership{
   text-align: center;
   margin: 20px 200px 0;
@@ -480,7 +488,11 @@ footer{
   margin-top: 40px;
 }
 
-footer p, a{
+footer p {
+  color: #F2F2F3;
+}
+
+footer a {
   color: #F2F2F3;
 }
 
@@ -622,6 +634,10 @@ footer .copyright{
     margin: 10px;
   }
 
+  #massages .policy-note{
+  margin: 1rem 1rem;
+}
+
   footer{
     font-size: 16px;
   }
@@ -702,6 +718,10 @@ footer .copyright{
   #massages .massage-services .book-bottom-row .massage-bot{
     margin: 10px;
   }
+
+  #massages .policy-note{
+  margin: 1rem 1rem;
+}
 
   #membership{
     margin: 20px 167px 0;
@@ -829,6 +849,10 @@ footer .copyright{
   #massages .massage-services .book-bottom-row .massage-bot{
     margin: 10px;
   }
+
+  #massages .policy-note{
+  margin: 1rem 1rem;
+}
 
   #membership{
     margin: 20px 5px 0;
